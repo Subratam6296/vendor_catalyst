@@ -34,9 +34,10 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     Launcher3QuickStep
 
-# Enable Android Beam on all targets
+# Enable Android Beam & Smart Charging on all targets
 PRODUCT_COPY_FILES += \
-    vendor/catalyst/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml
+    vendor/catalyst/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml \
+    vendor/catalyst/prebuilt/common/etc/init/smartcharge-init.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/smartcharge-init.rc
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
