@@ -151,6 +151,11 @@ PRODUCT_PACKAGES += \
     ZigZagSignalOverlay \
     WavySignalOverlay \
     RoundSignalOverlay \
+    PillsSignalOverlay \
+    HuaweiSignalOverlay \
+    IosSignalOverlay \
+    DeepSignalOverlay \
+    AquariumSignalOverlay \
     InsideSignalOverlay \
     BarsSignalOverlay
 
