@@ -141,3 +141,26 @@ PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/catalyst/fonts,$(TA
 
 # Includes fonts
 include vendor/catalyst/fonts/fonts.mk
+
+
+# Statusbar Icons
+PRODUCT_PACKAGES += \
+    StrokeSignalOverlay \
+    SneakySignalOverlay \
+    XperiaSignalOverlay \
+    ZigZagSignalOverlay \
+    WavySignalOverlay \
+    RoundSignalOverlay \
+    InsideSignalOverlay \
+    BarsSignalOverlay
+
+# Wi-Fi Icons
+PRODUCT_PACKAGES += \
+    StrokeWiFiOverlay \
+    SneakyWiFiOverlay \
+    XperiaWiFiOverlay \
+    ZigZagWiFiOverlay \
+    WavyWiFiOverlay \
+    RoundWiFiOverlay \
+    InsideWiFiOverlay \
+    BarsWiFiOverlay
