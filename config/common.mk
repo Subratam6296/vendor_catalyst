@@ -135,3 +135,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     vendor/catalyst/config/permissions/privapp-permissions-google-as.xml:product/etc/permissions/privapp-permissions-google-as.xml
+    
+# Copy fonts to system
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/catalyst/fonts,$(TARGET_COPY_OUT_SYSTEM)/fonts)
+
+# Includes fonts
+include vendor/catalyst/fonts/fonts.mk
