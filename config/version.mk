@@ -13,11 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/gapps/common/common-vendor.mk)
+# Gapps
+ifeq ($(WITH_GAPPS),true)
+	CATALYST_BUILD_ZIP_TYPE := GAPPS
+else
+	CATALYST_BUILD_ZIP_TYPE := VANILLA
+endif
 
 CATALYST_MOD_VERSION = 1.1
-CATALYST_BUILD_TYPE := UNOFFICIAL
-CATALYST_BUILD_ZIP_TYPE := GAPPS
+CATALYST_BUILD_TYPE := MOD
 
 ifeq ($(CATALYST_BETA),true)
     CATALYST_BUILD_TYPE := BETA
