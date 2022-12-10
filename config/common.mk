@@ -126,3 +126,12 @@ include vendor/catalyst/config/props.mk
 
 # Sounds
 include vendor/catalyst/config/sounds.mk
+
+# Smartspace
+PRODUCT_PACKAGES += \
+    DeviceIntelligenceNetworkPrebuilt \
+    DevicePersonalizationPrebuiltPixel2021 \
+    PixelConfigOverlayCommon
+
+PRODUCT_COPY_FILES += \
+    vendor/catalyst/config/permissions/privapp-permissions-google-as.xml:product/etc/permissions/privapp-permissions-google-as.xml
