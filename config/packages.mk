@@ -27,7 +27,8 @@ PRODUCT_PACKAGES += \
     stats \
     ThemePicker \
     CatalystThemesStub \
-    GameSpace
+    GameSpace \
+    Aperture
 
 # SystemUI plugins
 PRODUCT_PACKAGES += \
